@@ -1,0 +1,681 @@
+  /*body*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url('imaback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+ /* Header */
+.all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 20px; /* Added padding for spacing */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+
+#img1 {
+  width: 100px; /* Reduced width for better proportion */
+  margin: 10px;
+  border-radius: 50%; /* Make the logo image round */
+}
+
+nav {
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px; /* Increased spacing between menu items */
+}
+
+nav a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px; /* Adjusted font size */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: rgb(9, 226, 246); /* Change color on hover */
+}
+
+  #img1{
+    width: 200px;
+    margin: 10px;
+  }
+
+
+/*body*/
+
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc5, .bloc6, .bloc7, .bloc10 {
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*body_bloc1*/
+.bloc1{
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+.text1-bloc1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+.text2-bloc1{
+  font-weight: bold;
+  font-size: 36px;
+  background-image: linear-gradient(to right, #f00, #ff0, #0f0);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+/*body_bloc2*/
+.bloc2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.image1-bloc2 {
+  width: 200px;
+  height: 350px;
+  margin-right: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+#image_bloc2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1-bloc2::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(10, 228, 210);
+  box-sizing: border-box;
+  animation: pulseBorder 3s infinite alternate;
+}
+
+@keyframes pulseBorder {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1.1);
+      opacity: 0.5;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text1-bloc2 {
+  font-weight: bold;
+  font-size: 30px;
+  background-image: linear-gradient(to right, #f00, rgb(0, 255, 64), rgb(255, 0, 179));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.text2-bloc2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.button1-bloc2 button {
+  margin-right: 10px;
+}
+
+  
+/*body_bloc3*/
+.bloc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.text1-bloc3{
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #f00, rgb(0, 255, 157), rgb(74, 34, 255));
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .button1-bloc3 button{
+    margin-right: 10px;    
+    }
+
+/*body_bloc4*/
+.bloc4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 50%;
+  text-align: right;
+  direction: rtl;
+  padding: 0 20px; /* Add some padding for spacing */
+}
+
+.image-area {
+  max-width: 50%;
+  text-align: left;
+}
+
+.text1-bloc4{
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #f00, rgb(0, 255, 64), rgb(255, 0, 179));
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+.text2-bloc4{
+  direction: rtl;
+}
+.text3-bloc4{
+  direction: rtl;
+}
+.button1-bloc4{
+  direction: rtl;
+}
+#image_bloc4{
+  padding-left: 50px;
+  width: 650px;
+  height: 350px;
+}
+
+/*body_bloc5*/
+.bloc5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px;
+}
+.text1-bloc5{
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #f00, rgb(0, 255, 64), rgb(255, 0, 179));
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    margin-bottom: 20px;
+}
+#image_bloc5{
+  padding-right: 50px;
+  width: 600px;
+  height: auto;
+}
+
+
+/*body_bloc6*/
+.bloc6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.text1-bloc6 {
+  font-weight: bold;
+  font-size: 30px;
+  background-image: linear-gradient(to right, #f00, rgb(0, 255, 64), rgb(68, 131, 225));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  direction: rtl;
+}
+
+.text2-bloc6 {
+  direction: rtl;
+}
+
+.text3-bloc6 {
+  direction: rtl;
+}
+
+.button1-bloc6 {
+  direction: rtl;
+}
+
+.image1-bloc6 {
+  position: relative;
+}
+
+.image1-bloc6::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  width: 50%;
+  height: 90%;
+  border: 2px solid rgb(209, 187, 187);
+  box-sizing: border-box;
+}
+
+.image1-bloc6 img {
+  position: relative;
+  z-index: 1;
+}
+
+#image_bloc6 {
+  padding-left: 50px;
+  width: 700px;
+  height: auto;
+}
+
+/*body_bloc10*/
+.bloc10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.image_bloc10 {
+  width: 300px;
+  height: 500px;
+  padding-right: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+#image_bloc10 {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 100px;
+}
+
+.text-container10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.text1-bloc10 {
+  font-weight: bold;
+  font-size: 30px;
+  background-image: linear-gradient(to right, #f00, #ff0, #0f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.text2-bloc10 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.text3-bloc10 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.button1-bloc10 button {
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+/*body_bloc7*/
+.bloc7{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  row-gap: 40px;
+  margin: 50px;
+  justify-content: center;
+
+}
+.text-center7{
+font-weight: bold;
+font-size: 30px;
+background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 191, 0), #0f0);
+background-clip: text;
+-webkit-background-clip: text; 
+color: transparent;
+margin-bottom: 20px;
+text-align: center;
+}
+.grid-item-7
+{
+  color: aliceblue;
+  background-color: transparent;
+  border: 5px solid #11767d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 40px;
+  word-wrap: break-word;
+}
+
+.grid-item-7:hover {
+  border: none;
+  transform: scale(1.05);
+  background-color: #065257;
+  opacity: 0.8;
+}
+.bloc7-flex{
+  display: flex;
+}
+.bloc7-flex img{
+  width: 50px;
+  padding-right: 10px;
+}
+
+
+/*body_bloc8*/
+/* Your existing CSS */
+.text-center8 {
+  font-weight: bold;
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgb(238, 21, 184), rgb(89, 142, 102), rgb(226, 255, 9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.bloc8 {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 40px;
+  margin: 50px;
+  justify-content: center;
+}
+
+/* Apply hover effect to grid items */
+.grid-item-8 {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  margin-left: 40px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition for the hover effect */
+}
+
+/* Adjust the size and opacity of grid items on hover */
+
+
+.grid-item-8:hover {
+  transform: scale(1.3); /* Increase the scale value to make the items bigger */
+  opacity: 0.7; /* Adjust the opacity value as desired */
+}
+
+.grid-item-8 img {
+  width: 100px;
+  padding-right: 10px;
+}
+
+.text5-bloc8 h5 {
+  white-space: nowrap;
+}
+
+#image68 {
+  width: 115px;
+}
+
+#image78 {
+  width: 90px;
+}
+
+#image88 {
+  width: 115px;
+}
+
+/*body_bloc9*/
+/*body_bloc9*/
+
+.bloc09 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Black gradient with opacity */
+  border: 5px solid transparent; /* Start with a transparent border */
+  border-radius: 50px;
+  padding: 20px;
+  margin: 100px auto; /* Add margin to center vertically */
+  width: 60%; /* Set the desired width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  position: relative; /* Add this to create a positioning context */
+  cursor: pointer; /* Add cursor style to indicate interactivity */
+  overflow: hidden; /* Ensure the gradient animation doesn't overflow */
+}
+
+.bloc09::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  border: 5px solid transparent; /* Start with a transparent border */
+  border-radius: inherit; /* Inherit the border radius from .bloc09 */
+  animation: animate 4s linear infinite;
+  pointer-events: none; /* Avoid interaction with pseudo-elements */
+  transform-origin: center; /* Set the rotation origin to the center */
+  z-index: -1;
+}
+
+.bloc09:hover::before {
+  border: 5px solid;
+  border-image: linear-gradient(315deg, #00ccff, #d400d4); /* Apply gradient border on hover */
+  border-image-slice: 1; /* Ensure the entire border is visible */
+  animation-play-state: paused; /* Pause the animation on hover */
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.text-center9 {
+  font-weight: bold;
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgb(238, 21, 184), rgb(89, 142, 102), rgb(226, 255, 9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bloc9 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center; /* Centering vertically */
+}
+
+.flex-container-part1-bloc9 {
+  padding-left: 50px; /* Smaller space */
+  color: #effcfd;
+}
+
+.icon-bloc9 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.icon-bloc9 img {
+  width: 50px;
+  padding-right: 20px;
+}
+
+.icon-bloc9 img {
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.flex-container-part2-bloc9 {
+  border: 1px solid rgb(6, 3, 19);
+  background-color: transparent;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+
+.form1-bloc9 {
+  background-image: linear-gradient(to right, #ff6b6b, #6b6bde, #6bdede, #6bdede, #ff6b6b); /* Colorful gradient */
+  border: 2px solid #294c4e;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.form1-bloc9-input1,
+.form1-bloc9-input2 {
+  margin-bottom: 10px;
+}
+
+.button-bloc9 {
+  background-color: #effcfd;
+  width: 30%;
+  border: 2px solid rgb(246, 227, 227);
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.button-bloc9:hover {
+  color: #effcfd;
+  background-color: #291f1f;
+  width: 30%;
+  border: 2px solid rgb(33, 30, 30);
+  border-radius: 10px;
+}
+
+/*footer*/
+.all2{
+  
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+.all2 img{
+  margin-bottom: 20px;
+}
+
+.parts2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.parts2 svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.parts2 svg:hover {
+  transform: scale(1.3);
+}
+
+
+  .bubbles-container {
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Adjust the height of the container as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  
+  .bubble {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(12, 12, 119, 0.5);
+    border-radius: 50%;
+    animation: floatBubble 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatBubble {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
